@@ -7,7 +7,7 @@ def happy_new_year
     counter -= 1
   end
 end
-binding.pry
+
 
 # No need to modify this code! Use this to implement the fizzbuzz_printer method.
 def fizzbuzz(num)
@@ -22,16 +22,16 @@ def fizzbuzz(num)
   end
 end
 
-def fizzbuzz_printer
+def fizzbuzz_printer()
   # your code here
   num = 1
-  until num > 100
+  while num <= 100
     puts fizzbuzz(num)
     num += 1
   end
 end
 
-
+binding.pry
 
 def reverse_string(str)
   # your code here
