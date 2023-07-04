@@ -3,9 +3,10 @@ def happy_new_year
   # your code here
   counter = 10
   while counter>0
-    puts "Happy New Year!"
+    puts counter
     counter -= 1
   end
+  puts "Happy New Year!"
 end
 
 
@@ -31,8 +32,13 @@ def fizzbuzz_printer()
   end
 end
 
-binding.pry
-
 def reverse_string(str)
   # your code here
+  reversed_string = ""
+  i = str.length - 1
+  while i >= 0
+    reversed_string += str[i]
+    i -= 1
+  end
+  reversed_string
 end
